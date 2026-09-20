@@ -71,3 +71,13 @@ processing — it does not use a generative AI video model, so it does not
 hallucinate new detail (e.g. it cannot reveal what is *behind* an object as the
 camera pushes in). The trade-off is that the original scene is preserved
 exactly and every motion is controllable and repeatable.
+
+## Also in this repo: the Salawat sequence
+
+[`salawat/`](salawat/) holds the 7 image-generation prompts for a cinematic
+*Salawat* sequence (see [`salawat/PROMPTS.md`](salawat/PROMPTS.md)) and
+[`scripts/montage.py`](scripts/montage.py), a Ken Burns + cross-dissolve
+montage renderer that assembles the 7 generated images into one continuous
+16:9 video (≈4–5 s per image, slow zoom, 0.5–1 s cross-dissolves, fade in/out).
+Generate the images, drop them in `salawat/images/` as `01.png` … `07.png`,
+then run the command shown at the bottom of `salawat/PROMPTS.md`.
