@@ -1,0 +1,7 @@
+# Python
+__pycache__/
+*.pyc
+
+# Render scratch (keep the committed final render in out/night_window.mp4)
+out/_*.mp4
+out/frames/
